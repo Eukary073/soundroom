@@ -1,3 +1,11 @@
-Get started by customizing your environment (defined in the .idx/dev.nix file) with the tools and IDE extensions you'll need for your project!
+# Soundroom App
 
-Learn more at https://developers.google.com/idx/guides/customize-idx-env
+## Setup
+1. Run `npm install`
+2. Configure firebase.js with your keys
+3. Run `expo start --android` for testing
+
+## Features
+- MVP as per spec: Auth, profiles, posts, subscriptions, streaming, etc.
+
+For iOS: Add later with `expo build:ios`
