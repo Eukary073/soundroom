@@ -9,7 +9,7 @@
     pkgs.nodePackages.expo-cli
     # pkgs.python311
     # pkgs.python311Packages.pip
-    # pkgs.nodejs_20
+    pkgs.nodejs_20
     # pkgs.nodePackages.nodemon
   ];
   # Sets environment variables in the workspace
@@ -23,16 +23,16 @@
     previews = {
       enable = true;
       previews = {
-        # web = {
-        #   # Example: run "npm run dev" with PORT set to IDX's defined port for previews,
-        #   # and show it in IDX's web preview panel
-        #   command = ["npm" "run" "dev"];
-        #   manager = "web";
-        #   env = {
-        #     # Environment variables to set for your server
-        #     PORT = "$PORT";
-        #   };
-        # };
+        web = {
+          # Example: run "npm run dev" with PORT set to IDX's defined port for previews,
+          # and show it in IDX's web preview panel
+          command = ["npm" "run" "dev"];
+          manager = "web";
+          env = {
+            # Environment variables to set for your server
+            PORT = "$PORT";
+          };
+        };
       };
     };
     # Workspace lifecycle hooks
@@ -40,12 +40,14 @@
       # Runs when a workspace is first created
       onCreate = {
         npm-install = "npm install";
+        npm-install-hosting = "cd hosting && npm install";
         # Open editors for the following files by default, if they exist:
         default.openFiles = [ ".idx/dev.nix" "README.md" ];
       };
       # Runs when the workspace is (re)started
       onStart = {
         # Example: start a background task to watch and re-build backend code\n
+        run-hosting = "cd hosting && npm run dev &";
         run-expo = "cd soundroom-app && expo start";
       };
     };
