@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "Soundroom",
+    "slug": "soundroom",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "platforms": ["android", "web"], // iOS later
+    "android": {
+      "googleServicesFile": "./google-services.json"
+    }
+  }
+}
