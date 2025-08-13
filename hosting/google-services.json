@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "561552090503",
+    "project_id": "soundroom-app",
+    "storage_bucket": "soundroom-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561552090503:android:d7517ac32c3d9b0eee9f22",
+        "android_client_info": {
+          "package_name": "com.ynd.soundroom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8t7hvc5ILIJxej2mK69km0p7Cxe80Mgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
