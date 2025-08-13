@@ -41,6 +41,7 @@
       onCreate = {
         npm-install = "npm install";
         npm-install-hosting = "cd hosting && npm install";
+        npm-install-expo = "cd soundroom-app && npm install";
         # Open editors for the following files by default, if they exist:
         default.openFiles = [ ".idx/dev.nix" "README.md" ];
       };
@@ -48,7 +49,7 @@
       onStart = {
         # Example: start a background task to watch and re-build backend code\n
         run-hosting = "cd hosting && npm run dev &";
-        run-expo = "cd soundroom-app && expo start";
+        run-expo = "cd soundroom-app && expo start &";
       };
     };
   };
