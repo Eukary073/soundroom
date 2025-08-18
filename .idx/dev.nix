@@ -6,6 +6,7 @@
   # Use https://search.nixos.org/packages to find packages
   packages = [
     # pkgs.go
+ pkgs.adoptopenjdk-hotspot-bin-16
     pkgs.nodePackages.expo-cli
     # pkgs.python311
     # pkgs.python311Packages.pip
@@ -25,7 +26,7 @@
       previews = {
         web = {
           # Example: run "npm run dev" with PORT set to IDX's defined port for previews,
-          # and show it in IDX's web preview panel
+          # and show it in IDX's web preview panel\n          # command = ["npm" "run" "dev"];
           command = ["npm" "run" "dev"];
           manager = "web";
           env = {
