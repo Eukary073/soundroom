@@ -4,12 +4,12 @@ import { getFirestore } from 'firebase/firestore';
 import { getStorage } from 'firebase/storage';
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY", // From Firebase console
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID",
+  apiKey: "AIzaSyB8t7hvc5ILIJxej2mK69km0p7Cxe80Mgk", // From Firebase console
+  authDomain: "soundroom-app.firebaseapp.com",
+  projectId: "soundroom-app",
+  storageBucket: "soundroom-app.firebasestorage.app",
+  messagingSenderId: "561552090503",
+  appId: "1:561552090503:android:d7517ac32c3d9b0eee9f22",
 };
 
 const app = initializeApp(firebaseConfig);
